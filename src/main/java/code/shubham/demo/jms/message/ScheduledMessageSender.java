@@ -16,13 +16,13 @@ public class ScheduledMessageSender {
 
 	@Scheduled(cron = "0/5 * * ? * *")
 	public void sendingInfoMessage() {
-		this.jmsTemplate.convertAndSend("mailbox", new MessageObject("info@example.com", "info"));
+		this.jmsTemplate.convertAndSend("mailbox", MessageObject.builder().toAddress("info@example.com").message("info"));
 
 	}
 
 	@Scheduled(cron = "0/8 * * ? * *")
 	public void sendingTestMessage() {
-		this.jmsTemplate.convertAndSend("mailbox", new MessageObject("test@example.com", "test"));
+		this.jmsTemplate.convertAndSend("mailbox", MessageObject.builder().toAddress("test@example.com").message("test"));
 	}
 
 }

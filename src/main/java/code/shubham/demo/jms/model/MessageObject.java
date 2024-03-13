@@ -1,23 +1,17 @@
 package code.shubham.demo.jms.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Builder
 public class MessageObject {
 
 	private String toAddress;
 
 	private String message;
-
-	public MessageObject() {
-	}
-
-	public MessageObject(String toAddress, String message) {
-		this.toAddress = toAddress;
-		this.message = message;
-	}
 
 	@Override
 	public String toString() {
