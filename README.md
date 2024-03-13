@@ -9,7 +9,7 @@ Your task is to complete the given project as per the above requirements so that
 ## Commands
 - run: 
 ```bash
-./gradlew clean build -DskipTests && java -jar target/SchedulingApi-1.0.jar
+./gradlew clean build -DskipTests && java -jar build//libs/spring-boot-demo-jms-0.0.1.jar
 ```
 - install: 
 ```bash
