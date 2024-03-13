@@ -1,6 +1,4 @@
 ## Environment:
-- Java version: 21 
-- Maven version: 3.*
 - Spring Boot version: 3.2.1
 
 ## Requirements:
